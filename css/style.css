@@ -21,6 +21,9 @@ a {
 .mr-20 {
     margin-right: 20px;
 }
+.ml-20 {
+    margin-left: 20px;
+}
 .color-r {
     color: red;
 }
@@ -36,7 +39,9 @@ a {
 .color-o {
     color: #fccd27;
 }
-
+.hidden {
+    display: none !important;
+}
 .center {
     position: absolute;
     left: 50%;
@@ -200,8 +205,8 @@ h1 {
 .link_project {
     text-decoration: none;
     color: #baddfa;
-    font-size: 2rem;
-    margin: 10px;
+    font-size: 1.5rem;
+    margin: 20px 0;
 }
 h2 {
     padding: 10px 0;

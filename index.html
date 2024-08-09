@@ -119,43 +119,35 @@
             <section id="projets">
                 <h1>Projets</h1>
                 <article class="sous_partie">
-                    <h2>Teris</h2>
+                    <h2>Tetris</h2>
                     <img
-                        src="./images/home_background.jpg"
-                        alt="maître untel"
-                        class="block_center" />
+                        src="./images/projets/tetris/tetris_game_over.jpg"
+                        alt="projet tetris"
+                        class="block_center"
+                        width="800" />
 
-                    <h2>Sous Partie</h2>
+                    <h2>Mon premier projet "sérieux" ;)</h2>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates accusamus sunt illo modi at
-                        exercitationem quisquam ipsum dolor corrupti ad
-                        laudantium nemo laborum amet expedita a numquam, odio
-                        qui ipsam.
+                        Durant ma première formation d'intégrateur web, un des
+                        enseignants nous a mis au défi de réaliser un "Tétris"
                     </p>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates accusamus sunt illo modi at
-                        exercitationem quisquam ipsum dolor corrupti ad
-                        laudantium nemo laborum amet expedita a numquam, odio
-                        qui ipsam.
+                        A l'époque celà nous paraissait totalement hors de
+                        portée, mais en réfléchissant un peu plus, les éléments
+                        se sont mis en place petit à petit (comme dans le jeu
+                        quand on y pense).
                     </p>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates accusamus sunt illo modi at
-                        exercitationem quisquam ipsum dolor corrupti ad
-                        laudantium nemo laborum amet expedita a numquam, odio
-                        qui ipsam.
+                        Malgré le fait qu'il soit probablement très mal codé (je
+                        n'ose même pas vérifier), je fus très fier d'être le
+                        premier à l'avoir fait fonctionner. On se satisfait
+                        comme on peut.
                     </p>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates accusamus sunt illo modi at
-                        exercitationem quisquam ipsum dolor corrupti ad
-                        laudantium nemo laborum amet expedita a numquam, odio
-                        qui ipsam.
-                    </p>
-                    <a class="block link_project" href="./pages/tetris.html"
-                        >Lire la suite</a
+                    <a
+                        class="block link_project"
+                        href="https://bertrand75.github.io/tetris/"
+                        target="_blank"
+                        >Une petite partie ?</a
                     >
                 </article>
             </section>
@@ -163,6 +155,10 @@
                 <h1>CV</h1>
                 <button class="block_center" onclick="displayCV()">
                     Visualiser le CV
+                    <i class="fa-solid fa-plus ml-20" id="cv-plus"></i
+                    ><i
+                        class="fa-solid fa-minus ml-20 hidden"
+                        id="cv-minus"></i>
                 </button>
                 <div class="text_center collapsible" id="cv_container">
                     <iframe
@@ -178,7 +174,7 @@
                 <div id="contact_content" class="flex_horiz">
                     <div id="contact_adresse">
                         <p class="bold">
-                            Pour nous contacter, remplissez le formulaire
+                            Pour me contacter, remplissez le formulaire
                             ci-contre ou utilisez les coordonnées suivants :
                         </p>
                         <address>
@@ -192,10 +188,6 @@
                             <p>
                                 Tel :
                                 <a href="tel:+33100000000">+33 1 00 00 00 00</a>
-                            </p>
-                            <p>
-                                Fax :
-                                <a href="fax:+33100000001">+33 1 00 00 00 01</a>
                             </p>
                             <p>
                                 Email :

@@ -92,5 +92,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // On récupère l'élément à afficher
 function displayCV() {
     let cv = document.getElementById("cv_container");
+    let cvPlus = document.getElementById("cv-plus");
+    let cvMinus = document.getElementById("cv-minus");
     cv.classList.toggle("expanded");
+    cvPlus.classList.toggle("hidden");
+    cvMinus.classList.toggle("hidden");
 }
