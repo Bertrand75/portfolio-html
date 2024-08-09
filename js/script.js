@@ -13,13 +13,13 @@ function myFunction() {
 }
 // console.log(window.innerWidth);
 // console.log(window.innerHeight);
-let map = L.map("map").setView([48.862208, 2.343391], 16);
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution:
-        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-}).addTo(map);
-let marker = L.marker([48.862208, 2.343391]).addTo(map);
+// let map = L.map("map").setView([48.862208, 2.343391], 16);
+// L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//     maxZoom: 19,
+//     attribution:
+//         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+// }).addTo(map);
+// let marker = L.marker([48.862208, 2.343391]).addTo(map);
 
 // Nav qui s'ajuste à la position
 

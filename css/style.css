@@ -18,6 +18,9 @@ a {
 /************************* GENERIC CLASSES ******************************/
 /************************************************************************/
 
+.w-300 {
+    width: 300px;
+}
 .mr-20 {
     margin-right: 20px;
 }
@@ -257,8 +260,12 @@ input[type="submit"] {
 
 /**************************** CV DEPLIANT *******************************/
 
+#cv {
+    padding-bottom: 50px;
+}
+
 #cv button {
-    margin: 100px auto 10px auto;
+    margin: 100px auto 50px auto;
     color: #d2d2d2;
     font-size: 1.5rem;
     padding: 20px;
@@ -269,7 +276,6 @@ input[type="submit"] {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s;
-    margin-bottom: 100px;
 }
 
 .expanded {
