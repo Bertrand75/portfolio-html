@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Parcourir les liens et ajouter un gestionnaire d'événements pour chaque lien
     navLinks.forEach(function (link) {
         link.addEventListener("click", function (event) {
-            event.preventDefault(); // Empêche le comportement par défaut du lien
+            // event.preventDefault(); // Empêche le comportement par défaut du lien
 
             // Réinitialiser la couleur de tous les liens
             navLinks.forEach(function (resetLink) {
@@ -87,3 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// CV DEPLIANT
+// On récupère l'élément à afficher
+function displayCV() {
+    let cv = document.getElementById("cv_container");
+    cv.classList.toggle("expanded");
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -11,14 +11,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
-            rel="stylesheet"
-        />
+            rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
             integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-            crossorigin=""
-        />
+            crossorigin="" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
         <title>Portfolio</title>
     </head>
     <body>
@@ -31,6 +32,7 @@
                         <li><a href="#presentation">Présentation</a></li>
                         <li><a href="#projets">Projets</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#cv">CV</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,60 +42,73 @@
                 <img
                     src="./images/logo.jpg"
                     alt="logo du site"
-                    id="hidden_navbar_logo"
-                />
-                <a href="#home">Accueil</a>
+                    id="hidden_navbar_logo" />
+                <a href="#home"
+                    ><i class="fa-solid fa-house mr20 color-r"></i>Accueil</a
+                >
                 <a href="#presentation">Présentation</a>
                 <a href="#projets">Projets</a>
                 <a href="#contact">Contact</a>
+                <a href="#cv">CV</a>
             </nav>
             <section id="presentation">
                 <h1>Présentation</h1>
                 <div class="sous_partie">
-                    <h2>Sous Partie</h2>
+                    <h2>Reconversion</h2>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates accusamus sunt illo modi at
-                        exercitationem quisquam ipsum dolor corrupti ad
-                        laudantium nemo laborum amet expedita a numquam, odio
-                        qui ipsam.
+                        J'ai été durant plusieurs années superviseur dans le
+                        domaine des enquêtes de satisfaction téléphoniques (et
+                        accessoirement terrain) pour le compte de grands groupes
+                        (principalement des banques).
                     </p>
+
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates accusamus sunt illo modi at
-                        exercitationem quisquam ipsum dolor corrupti ad
-                        laudantium nemo laborum amet expedita a numquam, odio
-                        qui ipsam.
+                        Après avoir pris la décision de me reconvertir, j'ai
+                        entrepris une série de formations intensives en
+                        développement web et conception d'applications.
                     </p>
                 </div>
 
                 <div class="sous_partie">
-                    <h2>Sous Partie</h2>
+                    <h2>Formations</h2>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates accusamus sunt illo modi at
-                        exercitationem quisquam ipsum dolor corrupti ad
-                        laudantium nemo laborum amet expedita a numquam, odio
-                        qui ipsam.
+                        Ces formations m'ont permis d'acquérir des compétences
+                        pratiques dans des langages tels que HTML, CSS,
+                        JavaScript, PHP, Java, C#, Python ainsi que dans des
+                        frameworks populaires tels que React et Node.js. Sans
+                        oublier les bases de données SQL et NoSQL.
+                    </p>
+                </div>
+
+                <div class="sous_partie">
+                    <h2>Expériences</h2>
+                    <p>
+                        En parallèle de ma formation, j'ai eu l'occasion de
+                        travailler sur divers projets, allant de petites pages
+                        web à des projets plus ambitieux. Ces expériences m'ont
+                        permis d'appliquer mes connaissances théoriques dans des
+                        contextes réels, tout en développant ma capacité à
+                        résoudre des problèmes et à travailler de manière
+                        autonome.
                     </p>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates accusamus sunt illo modi at
-                        exercitationem quisquam ipsum dolor corrupti ad
-                        laudantium nemo laborum amet expedita a numquam, odio
-                        qui ipsam.
+                        Aujourd'hui, je suis prêt à mettre mes compétences au
+                        service de projets passionnants et à continuer à
+                        apprendre et à évoluer en tant que développeur. Je suis
+                        convaincu que ma détermination, ma curiosité et mon
+                        engagement envers l'apprentissage continu font de moi un
+                        atout précieux pour toute équipe de développement.
                     </p>
                 </div>
             </section>
             <section id="projets">
                 <h1>Projets</h1>
                 <article class="sous_partie">
-                    <h2>Projet lambda</h2>
+                    <h2>Teris</h2>
                     <img
                         src="./images/home_background.jpg"
                         alt="maître untel"
-                        class="block_center"
-                    />
+                        class="block_center" />
 
                     <h2>Sous Partie</h2>
                     <p>
@@ -124,11 +139,25 @@
                         laudantium nemo laborum amet expedita a numquam, odio
                         qui ipsam.
                     </p>
-                    <a class="block link_project" href="#">Site</a>
-                    <a class="block link_project" href="#">Dossier</a>
+                    <a class="block link_project" href="./pages/tetris.html"
+                        >Lire la suite</a
+                    >
                 </article>
             </section>
-
+            <section id="cv">
+                <h1>CV</h1>
+                <button class="block_center" onclick="displayCV()">
+                    Visualiser le CV
+                </button>
+                <div class="text_center collapsible" id="cv_container">
+                    <iframe
+                        src="./pages/cv.html"
+                        scrolling="no"
+                        frameborder="0"
+                        height="850"
+                        width="700"></iframe>
+                </div>
+            </section>
             <section id="contact">
                 <h1>Contact</h1>
                 <div id="contact_content" class="flex_horiz">
@@ -175,8 +204,7 @@
                             name="message"
                             id="message"
                             cols="30"
-                            rows="10"
-                        ></textarea>
+                            rows="10"></textarea>
 
                         <input type="submit" value="Envoyer" />
                     </form>
@@ -193,8 +221,8 @@
         <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""
-        ></script>
+            crossorigin=""></script>
         <script src="./js/script.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
