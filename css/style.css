@@ -2,7 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    /* font-family: "PT Sans", Arial, Helvetica, sans-serif; */
+    font-family: "Cascadia Code", sans-serif;
 }
 
 /************************************************************************/
@@ -17,7 +18,7 @@ a {
 /************************* GENERIC CLASSES ******************************/
 /************************************************************************/
 
-.mr20 {
+.mr-20 {
     margin-right: 20px;
 }
 .color-r {
@@ -26,6 +27,16 @@ a {
 .color-w {
     color: white;
 }
+.color-g {
+    color: rgb(20, 235, 20);
+}
+.color-b {
+    color: blue;
+}
+.color-o {
+    color: #fccd27;
+}
+
 .center {
     position: absolute;
     left: 50%;
