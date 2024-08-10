@@ -88,6 +88,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// ONGLETS PROJETS
+function openTab(x) {
+    let contents = document.querySelectorAll(".tab-content");
+    let buttons = document.querySelectorAll(".tab-btn");
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+        buttons[i].classList.remove("tab-btn-active");
+    }
+    contents[x].style.display = "block";
+    buttons[x].classList.add("tab-btn-active");
+}
+
 // CV DEPLIANT
 // On récupère l'élément à afficher
 function displayCV() {

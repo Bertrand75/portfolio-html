@@ -31,7 +31,13 @@
         <img
             src="./images/en_construction.png"
             alt="en construction"
-            style="z-index: 10000; position: fixed; top: 150px; left: 200px" />
+            style="
+                z-index: 10000;
+                position: fixed;
+                top: 150px;
+                left: 200px;
+                width: 200px;
+            " />
 
         <header id="home">
             <div id="#header_empty_space"></div>
@@ -124,53 +130,73 @@
             </section>
             <section id="projets">
                 <h1>Projets</h1>
-                <article class="sous_partie">
-                    <h2 class="color-g">Tetris</h2>
-                    <div class="technos">
-                        <img
-                            src="./images/technos/html.png"
-                            class="img-techno"
-                            alt="logo html" />
-                        <img
-                            src="./images/technos/css.png"
-                            class="img-techno"
-                            alt="logo css" />
-                        <img
-                            src="./images/technos/js.png"
-                            class="img-techno"
-                            alt="logo javascript" />
+                <!-- système d'onglets -->
+
+                <div class="tab-btns">
+                    <button class="tab-btn tab-btn-active" onclick="openTab(0)">
+                        Tetris
+                    </button>
+                    <button class="tab-btn" onclick="openTab(1)">
+                        Projet 2
+                    </button>
+                    <button class="tab-btn" onclick="openTab(2)">
+                        Projet 3
+                    </button>
+                </div>
+                <div class="tab-contents">
+                    <div class="tab-content" style="display: block">
+                        <article class="sous_partie">
+                            <h2 class="color-g">Tetris</h2>
+                            <div class="technos">
+                                <img
+                                    src="./images/technos/html.png"
+                                    class="img-techno"
+                                    alt="logo html" />
+                                <img
+                                    src="./images/technos/css.png"
+                                    class="img-techno"
+                                    alt="logo css" />
+                                <img
+                                    src="./images/technos/js.png"
+                                    class="img-techno"
+                                    alt="logo javascript" />
+                            </div>
+                            <img
+                                src="./images/projets/tetris/tetris_game_over.jpg"
+                                alt="projet tetris"
+                                class="block_center"
+                                width="800" />
+
+                            <h3>Mon premier projet "sérieux" ;)</h3>
+
+                            <p>
+                                Durant ma première formation d'intégrateur web,
+                                un des enseignants nous a mis au défi de
+                                réaliser un "Tétris"
+                            </p>
+                            <p>
+                                A l'époque celà nous paraissait totalement hors
+                                de portée, mais en réfléchissant un peu plus,
+                                les éléments se sont mis en place petit à petit
+                                (comme dans le jeu quand on y pense).
+                            </p>
+                            <p>
+                                Malgré le fait qu'il soit probablement très mal
+                                codé (je n'ose même pas vérifier), je fus très
+                                fier d'être le premier à l'avoir fait
+                                fonctionner. On se satisfait comme on peut.
+                            </p>
+                            <a
+                                class="block link_project"
+                                href="https://bertrand75.github.io/tetris/"
+                                target="_blank"
+                                >Une petite partie ?</a
+                            >
+                        </article>
                     </div>
-                    <img
-                        src="./images/projets/tetris/tetris_game_over.jpg"
-                        alt="projet tetris"
-                        class="block_center"
-                        width="800" />
-
-                    <h3>Mon premier projet "sérieux" ;)</h3>
-
-                    <p>
-                        Durant ma première formation d'intégrateur web, un des
-                        enseignants nous a mis au défi de réaliser un "Tétris"
-                    </p>
-                    <p>
-                        A l'époque celà nous paraissait totalement hors de
-                        portée, mais en réfléchissant un peu plus, les éléments
-                        se sont mis en place petit à petit (comme dans le jeu
-                        quand on y pense).
-                    </p>
-                    <p>
-                        Malgré le fait qu'il soit probablement très mal codé (je
-                        n'ose même pas vérifier), je fus très fier d'être le
-                        premier à l'avoir fait fonctionner. On se satisfait
-                        comme on peut.
-                    </p>
-                    <a
-                        class="block link_project"
-                        href="https://bertrand75.github.io/tetris/"
-                        target="_blank"
-                        >Une petite partie ?</a
-                    >
-                </article>
+                    <div class="tab-content">Contenu Projet 2</div>
+                    <div class="tab-content">Contenu Projet 3</div>
+                </div>
             </section>
             <section id="cv">
                 <h1>CV</h1>
