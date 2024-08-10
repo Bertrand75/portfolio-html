@@ -13,6 +13,30 @@ body {
 a {
     text-decoration: none;
 }
+h1 {
+    text-align: center;
+    background: #5d5d5c;
+    padding: 20px;
+    font-size: 3rem;
+    color: #d2d2d2;
+}
+h2 {
+    padding: 20px 0;
+    font-size: 2.5rem;
+    /* color: #0277bd; */
+    color: white;
+    text-align: center;
+}
+h3 {
+    padding: 10px 0;
+    font-size: 1.5rem;
+    color: #ce9178;
+}
+p {
+    color: #d2d2d2;
+    line-height: 1.5em;
+    margin: 10px 0;
+}
 
 /************************************************************************/
 /************************* GENERIC CLASSES ******************************/
@@ -24,8 +48,17 @@ a {
 .mr-20 {
     margin-right: 20px;
 }
+.mb-50 {
+    margin-bottom: 50px;
+}
 .ml-20 {
     margin-left: 20px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-100 {
+    margin-top: 100px;
 }
 .color-r {
     color: red;
@@ -184,13 +217,7 @@ section {
     margin-top: -100px;
     background-color: #1f1f1f;
 }
-h1 {
-    text-align: center;
-    background: #5d5d5c;
-    padding: 20px;
-    font-size: 3rem;
-    color: #d2d2d2;
-}
+
 .sous_partie {
     margin: 20px auto;
     max-width: 1000px;
@@ -205,7 +232,8 @@ h1 {
 }
 .block_center {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text_center {
@@ -217,23 +245,6 @@ h1 {
     color: #b3e5fc;
     font-size: 1.5rem;
     margin: 20px 0;
-}
-h2 {
-    padding: 20px 0;
-    font-size: 2.5rem;
-    /* color: #0277bd; */
-    color: white;
-    text-align: center;
-}
-h3 {
-    padding: 10px 0;
-    font-size: 1.5rem;
-    color: #ce9178;
-}
-p {
-    color: #d2d2d2;
-    line-height: 1.5em;
-    margin: 10px 0;
 }
 
 #contact_content {
@@ -273,7 +284,11 @@ input[type="submit"] {
 }
 
 /**************************** PROJETS *******************************/
-
+.technos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 .img-techno {
     height: 30px;
 }
@@ -285,21 +300,25 @@ input[type="submit"] {
 }
 
 #cv button {
-    margin: 100px auto 50px auto;
     color: #d2d2d2;
     font-size: 1.5rem;
     padding: 20px;
     background: rgb(93, 93, 92);
     cursor: pointer;
+    border-style: none;
 }
 .collapsible {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s;
+    height: 13rem;
+    transform: scale(0.3);
+    transform-origin: center 0;
+    transition: 0.4s;
+    margin-bottom: 50px;
 }
 
 .expanded {
-    max-height: 60rem;
+    height: 77rem;
+
+    transform: scale(1.5);
 }
 
 /************************************************************************/
@@ -322,6 +341,7 @@ footer p {
 /************************************************************************/
 
 @media screen and (max-width: 1200px) {
+    /***************** HEADER ******************/
     #header_empty_space {
         width: 0;
     }
