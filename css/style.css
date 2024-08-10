@@ -306,6 +306,7 @@ input[type="submit"] {
     background: rgb(93, 93, 92);
     cursor: pointer;
     border-style: none;
+    font-family: inherit;
 }
 .collapsible {
     height: 13rem;

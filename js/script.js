@@ -97,4 +97,9 @@ function displayCV() {
     cv.classList.toggle("expanded");
     cvPlus.classList.toggle("hidden");
     cvMinus.classList.toggle("hidden");
+    // if (!cvMinus.style.boxShadow) {
+    //     cvMinus.style.boxShadow = "inset 0 5px #0078d4";
+    // } else {
+    //     cvMinus.style.removeProperty("box-shadow");
+    // }
 }
