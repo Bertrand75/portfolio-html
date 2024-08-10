@@ -52,6 +52,10 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.flex {
+    display: flex;
+}
+
 /************************************************************************/
 /****************************** HEADER **********************************/
 /************************************************************************/
@@ -207,11 +211,18 @@ h1 {
 }
 .link_project {
     text-decoration: none;
-    color: #baddfa;
+    /* color: #baddfa; */
+    color: #b3e5fc;
     font-size: 1.5rem;
     margin: 20px 0;
 }
 h2 {
+    padding: 20px 0;
+    font-size: 2.5rem;
+    color: #0277bd;
+    text-align: center;
+}
+h3 {
     padding: 10px 0;
     font-size: 1.5rem;
     color: #ce9178;
@@ -256,6 +267,12 @@ input {
 }
 input[type="submit"] {
     width: 100px;
+}
+
+/**************************** PROJETS *******************************/
+
+.img-techno {
+    height: 30px;
 }
 
 /**************************** CV DEPLIANT *******************************/
