@@ -195,6 +195,7 @@ h1 {
     margin: 20px auto;
     max-width: 1000px;
 }
+
 .flex_horiz {
     display: flex;
     justify-content: space-between;
@@ -206,6 +207,7 @@ h1 {
     display: block;
     margin: 0 auto;
 }
+
 .text_center {
     text-align: center;
 }
