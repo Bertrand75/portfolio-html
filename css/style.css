@@ -284,6 +284,7 @@ input[type="submit"] {
 }
 
 /**************************** PROJETS *******************************/
+/************* ONGLETS ****************/
 .tab-btns {
     text-align: center;
     margin-top: 50px;
@@ -324,6 +325,7 @@ input[type="submit"] {
     height: 60rem;
     border: 1px solid #5d5d5d;
     margin: 0 50px 100px 50px;
+    text-align: center;
 }
 .technos {
     display: flex;
