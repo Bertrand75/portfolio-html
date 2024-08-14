@@ -326,6 +326,14 @@ input[type="submit"] {
     border: 1px solid #5d5d5d;
     margin: 0 50px 100px 50px;
     text-align: center;
+    position: relative;
+}
+.tab-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .technos {
     display: flex;
@@ -337,7 +345,7 @@ input[type="submit"] {
     margin: 0 3px;
 }
 
-/**************************** CV DEPLIANT *******************************/
+/**************************** CV *******************************/
 
 #cv {
     padding-bottom: 50px;
