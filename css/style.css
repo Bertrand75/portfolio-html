@@ -22,7 +22,7 @@ h1 {
 }
 h2 {
     padding: 20px 0;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     /* color: #0277bd; */
     color: white;
     text-align: center;
@@ -334,6 +334,7 @@ input[type="submit"] {
 }
 .img-techno {
     height: 30px;
+    margin: 0 3px;
 }
 
 /**************************** CV DEPLIANT *******************************/

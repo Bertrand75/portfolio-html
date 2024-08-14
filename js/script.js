@@ -2,6 +2,7 @@ const hidden_navbar = document.getElementById("hidden_navbar");
 const sticky = window.innerHeight - 150;
 window.addEventListener("scroll", myFunction);
 
+// Changement de Navbar en fonction de la position
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         hidden_navbar.classList.remove("absolute");
@@ -20,8 +21,6 @@ function myFunction() {
 //         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 // }).addTo(map);
 // let marker = L.marker([48.862208, 2.343391]).addTo(map);
-
-// Nav qui s'ajuste à la position
 
 document.addEventListener("DOMContentLoaded", function () {
     // Récupérer tous les liens de la navbar
