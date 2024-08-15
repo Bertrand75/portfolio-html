@@ -99,6 +99,20 @@ function openTab(x) {
     buttons[x].classList.add("tab-btn-active");
 }
 
+// LIRE LA SUITE
+function readMore(x) {
+    let projetDescriptions = document.querySelectorAll(".tab-content");
+    let shadow = document.querySelectorAll(".tab-content div");
+    let buttons = document.querySelectorAll(".tab-content button");
+    projetDescriptions[x].classList.toggle("article-reduced");
+    shadow[x].classList.toggle("hidden");
+    if (buttons[x].innerHTML == "Lire la suite") {
+        buttons[x].innerHTML = "Réduire";
+    } else {
+        buttons[x].innerHTML = "Lire la suite";
+    }
+}
+
 // CV DEPLIANT
 // On récupère l'élément à afficher
 function displayCV() {
