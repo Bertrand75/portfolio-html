@@ -105,15 +105,21 @@ function readMore(x) {
     let shadow = document.querySelectorAll(".tab-content div");
     let buttons = document.querySelectorAll(".tab-content button");
     projetDescriptions[x].classList.toggle("article-reduced");
-    shadow[x].classList.toggle("hidden");
-    if (buttons[x].innerHTML == "Lire la suite") {
-        buttons[x].innerHTML = "Réduire";
-    } else {
-        buttons[x].innerHTML = "Lire la suite";
-    }
+    setTimeout(() => {
+        shadow[x].classList.toggle("hidden");
+        if (buttons[x].innerHTML == "Lire la suite") {
+            buttons[x].style.opacity = 0;
+            buttons[x].innerHTML = "Réduire";
+            buttons[x].style.opacity = 1;
+        } else {
+            buttons[x].style.opacity = 0;
+            buttons[x].innerHTML = "Lire la suite";
+            buttons[x].style.opacity = 1;
+        }
+    }, "400");
 }
 
-// CV DEPLIANT
+// CV ZOOM
 // On récupère l'élément à afficher
 function displayCV() {
     let cv = document.getElementById("cv_container");

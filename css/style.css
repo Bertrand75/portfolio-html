@@ -355,7 +355,11 @@ input[type="submit"] {
 .article-full-3 {
     height: 60rem;
 }
-
+.article-full-1,
+.article-full-2,
+.article-full-3 {
+    transition: 0.5s ease-in-out;
+}
 .article-reduced {
     height: 55rem;
 }
