@@ -165,7 +165,6 @@ header {
 
 #hidden_navbar {
     display: flex;
-    align-items: center;
     width: 100%;
     background: #363839;
     height: 100px;
@@ -176,17 +175,26 @@ header {
 #hidden_navbar_logo {
     height: 100px;
 }
+#hidden_navbar ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+#hidden_navbar ul li {
+    flex-grow: 1;
+}
 #hidden_navbar a {
     display: flex;
     color: #a7a7a7;
     font-size: 1.5rem;
-    justify-content: center;
     align-items: center;
+
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 20px 0;
+    padding: 20px;
     background: #363839;
+    position: relative;
 }
 #hidden_navbar a::after {
     /* content: "\002716"; */
@@ -208,8 +216,8 @@ header {
 
 .burger {
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right: 27px;
+    top: 27px;
     padding: 0;
     width: 45px;
     height: 45px;
@@ -346,9 +354,9 @@ input[type="submit"] {
 /************* ONGLETS ****************/
 .tab-btns {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0 0 50px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .tab-btn {
@@ -444,6 +452,10 @@ input[type="submit"] {
     font-family: inherit;
     font-size: 1.5rem;
     cursor: pointer;
+    transition: 0.1s ease-in;
+}
+.tab-content button:hover {
+    color: #2e99ec;
 }
 /**************************** CV *******************************/
 
@@ -459,6 +471,10 @@ input[type="submit"] {
     cursor: pointer;
     border-style: none;
     font-family: inherit;
+    transition: 0.2s ease-in;
+}
+#cv button:hover {
+    background: rgb(111, 111, 111);
 }
 .collapsible {
     height: 13rem;
@@ -535,21 +551,23 @@ footer p {
     }
 }
 @media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
     .burger {
         display: block;
     }
     #header_empty_space {
         display: none;
     }
-    #hidden_navbar {
+    #hidden_navbar ul {
         position: fixed;
+        top: 100px;
         left: -50rem;
         transition: all 0.5s ease-in-out;
-        top: 0;
         flex-direction: column;
         width: 20rem;
     }
-    #hidden_navbar.show-nav {
+    #hidden_navbar.show-nav ul {
         left: 0;
         transition: all 0.5s ease-in-out;
     }
@@ -557,8 +575,6 @@ footer p {
     /* #hidden_navbar_logo {
         display: none;
     } */
-}
-@media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 480px) {
 }
