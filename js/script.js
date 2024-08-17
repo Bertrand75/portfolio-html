@@ -1,3 +1,5 @@
+// NAVBAR
+
 const hidden_navbar = document.getElementById("hidden_navbar");
 const sticky = window.innerHeight - 150;
 window.addEventListener("scroll", myFunction);
@@ -86,6 +88,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// BURGER
+
+function openBurger() {
+    const navbar = document.querySelector("#hidden_navbar");
+    const burger = document.querySelector(".burger");
+
+    burger.addEventListener("click", (e) => {
+        navbar.classList.toggle("show-nav");
+        burger.classList.toggle("cross-mode");
+    });
+    // bonus
+    // const navbarLinks = document.querySelectorAll(".navbar a");
+    // navbarLinks.forEach((link) => {
+    //     link.addEventListener("click", (e) => {
+    //         navbar.classList.toggle("show-nav");
+    //     });
+    // });
+}
+openBurger();
 
 // ONGLETS PROJETS
 function openTab(x) {

@@ -42,6 +42,8 @@
 
         <header id="home">
             <div id="#header_empty_space"></div>
+            <!-- Navbars -->
+            <!-- Navbar Accueil -->
             <div id="navbar_container">
                 <img src="./images/logo.jpg" alt="logo du site" id="logo" />
                 <nav id="navbar">
@@ -55,30 +57,34 @@
             </div>
         </header>
         <main>
-            <nav id="hidden_navbar" class="absolute">
+            <!-- Navbar fixe -->
+            <nav id="hidden_navbar" class="absolute hidden_navbar_left">
                 <img
                     src="./images/logo.jpg"
                     alt="logo du site"
                     id="hidden_navbar_logo" />
-                <a href="#home"
-                    ><i class="fa-solid fa-house mr-20 color-r"></i>Accueil</a
+                <a href="#home" id="home_link"
+                    ><i class="fa-solid fa-house color-r"></i>Accueil</a
                 >
                 <a href="#presentation"
-                    ><i class="fa-solid fa-user mr-20 color-b"></i
-                    >Présentation</a
+                    ><i class="fa-solid fa-user color-b"></i>Présentation</a
                 >
                 <a href="#projets"
-                    ><i class="fa-solid fa-window-maximize mr-20 color-g"></i
+                    ><i class="fa-solid fa-window-maximize color-g"></i
                     >Projets</a
                 >
                 <!-- <a href="#contact"
                     ><i class="fa-solid fa-phone mr-20 color-o"></i>Contact</a
                 > -->
                 <a href="#cv"
-                    ><i class="fa-regular fa-address-card mr-20 color-w"></i
-                    >CV</a
+                    ><i class="fa-regular fa-address-card color-w"></i>CV</a
                 >
             </nav>
+
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
+
             <section id="presentation">
                 <h1>Présentation</h1>
                 <div class="sous_partie">
