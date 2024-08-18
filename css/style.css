@@ -96,7 +96,8 @@ p {
 header {
     min-height: calc(100vh);
     background-color: white;
-    background-image: url("../images/home_background.jpg");
+    background-image: linear-gradient(grey, transparent),
+        url("../images/home_background.jpg");
     background-size: cover;
     opacity: 0.99;
     display: flex;
