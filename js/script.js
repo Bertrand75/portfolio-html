@@ -115,16 +115,24 @@ function readMore(x) {
     projetDescriptions[x].classList.toggle("article-reduced");
     setTimeout(() => {
         shadow[x].classList.toggle("hidden");
-        if (buttons[x].innerHTML == "Lire la suite") {
-            buttons[x].style.opacity = 0;
+    }, 400);
+    if (buttons[x].innerHTML == "Lire la suite") {
+        buttons[x].classList.add("fade");
+        setTimeout(() => {
             buttons[x].innerHTML = "Réduire";
-            buttons[x].style.opacity = 1;
-        } else {
-            buttons[x].style.opacity = 0;
+        }, 400);
+        setTimeout(() => {
+            buttons[x].classList.remove("fade");
+        }, 400);
+    } else {
+        buttons[x].classList.add("fade");
+        setTimeout(() => {
             buttons[x].innerHTML = "Lire la suite";
-            buttons[x].style.opacity = 1;
-        }
-    }, "400");
+        }, 400);
+        setTimeout(() => {
+            buttons[x].classList.remove("fade");
+        }, 400);
+    }
 }
 
 // CV ZOOM
