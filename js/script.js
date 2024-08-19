@@ -150,3 +150,7 @@ function displayCV() {
     //     cvMinus.style.removeProperty("box-shadow");
     // }
 }
+// TEST
+
+let iframe = document.getElementsByTagName("iframe")[0];
+console.log(iframe.contentDocument);
