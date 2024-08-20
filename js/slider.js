@@ -41,35 +41,3 @@ for (i = 1; i <= slides.length; i++) {
 
 var slideIndex = 1;
 showSlides(slideIndex);
-
-// MODAL
-
-let images = document.getElementsByClassName("slide-img");
-for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener("click", () => {
-        openModal(i);
-    });
-}
-function openModal(x) {
-    // Récupération du bloc modal
-    var modal = document.getElementById("myModal");
-    // Récupération et chargement de l'image
-    let imageModal = document.getElementById("modal-image");
-    let image = document.getElementsByClassName("slide-img")[x];
-    imageModal.src = image.src;
-    // Récupération et chargement du texte
-    let captionText = document.getElementById("caption");
-    let text = document.getElementsByClassName("slide-text")[x];
-    captionText.innerHTML = text.innerHTML;
-    // Affichage du bloc modal
-    modal.style.display = "block";
-    // Fermeture du modal
-    let span = document.getElementById("modal-close");
-    span.onclick = function () {
-        modal.style.display = "none";
-    };
-    modal.style.cursor = "pointer";
-    modal.onclick = function () {
-        modal.style.display = "none";
-    };
-}

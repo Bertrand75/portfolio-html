@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <link rel="stylesheet" type="text/css" href="./css/reset.css" />
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/slider.css" />
         <link rel="icon" type="image/png" href="./images/logo.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,11 +17,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
             rel="stylesheet" />
-        <!-- <link
-            rel="stylesheet"
-            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-            crossorigin="" /> -->
+
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -184,6 +181,13 @@
                         <button onclick="readMore(2)">Lire la suite</button>
                     </div>
                 </div>
+                <!-- MODAL -->
+                <div id="myModal" class="modal">
+                    <span id="modal-close">&times;</span>
+                    <img class="modal-content" id="modal-image" />
+                    <div id="caption"></div>
+                </div>
+                <!-- FIN MODAL -->
             </section>
             <section id="cv">
                 <h1>CV</h1>
@@ -210,54 +214,6 @@
                         width="700"></iframe>
                 </div>
             </section>
-            <!-- <section id="contact">
-                <h1>Contact</h1>
-                <div id="contact_content" class="flex_horiz">
-                    <div id="contact_adresse">
-                        <p class="bold">
-                            Pour me contacter, remplissez le formulaire
-                            ci-contre ou utilisez les coordonnées suivants :
-                        </p>
-                        <address>
-                            <p>
-                                SARL TEST
-                                <br />
-                                0 rue du Test
-                                <br />
-                                75000 Paris, FRANCE
-                            </p>
-                            <p>
-                                Tel :
-                                <a href="tel:+33100000000">+33 1 00 00 00 00</a>
-                            </p>
-                            <p>
-                                Email :
-                                <a href="mailto:test@test.fr">test@test.fr</a
-                                ><br />
-                            </p>
-                        </address>
-                        <div id="map"></div>
-                    </div>
-                    <form action="" method="post">
-                        <label for="nom">Nom</label>
-                        <input type="text" id="nom" name="nom" />
-                        <label for="prenom">Prénom</label>
-                        <input type="text" id="prenom" name="prenom" />
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" />
-                        <label for="telephone">Téléphone</label>
-                        <input type="tel" id="telephone" name="telephone" />
-                        <label for="message">Message</label>
-                        <textarea
-                            name="message"
-                            id="message"
-                            cols="30"
-                            rows="10"></textarea>
-
-                        <input type="submit" value="Envoyer" />
-                    </form>
-                </div>
-            </section> -->
         </main>
         <footer>
             <p>
@@ -266,10 +222,8 @@
             </p>
             <p>BB est un développeur motivé</p>
         </footer>
-        <!-- <script
-            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""></script> -->
+
         <script src="./js/script.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
