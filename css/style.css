@@ -391,11 +391,12 @@ input[type="submit"] {
 .tab-content {
     display: none;
     color: white;
-    height: 60rem;
+    /*height: 60rem;*/
     border: 1px solid #5d5d5d;
     margin: 0 50px 100px 50px;
     text-align: center;
     position: relative;
+    transition: 0.5s ease-in-out;
 }
 .tab-content iframe {
     position: absolute;
@@ -415,7 +416,7 @@ input[type="submit"] {
 }
 
 /********************* LIRE LA SUITE ***************************/
-.article-full-1 {
+/* .article-full-1 {
     height: 64rem;
 }
 .article-full-2 {
@@ -428,10 +429,9 @@ input[type="submit"] {
 .article-full-2,
 .article-full-3 {
     transition: 0.5s ease-in-out;
-}
+} */
 .article-reduced {
-    height: 55rem;
-    transition: 0.5s ease-in-out;
+    height: 50rem !important;
 }
 
 .tab-content div {

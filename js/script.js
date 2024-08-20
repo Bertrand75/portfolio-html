@@ -108,6 +108,29 @@ function openTab(x) {
 }
 
 // LIRE LA SUITE
+window.addEventListener("load", function () {
+    // Récupération des iframes du slider
+    let iframes = document.querySelectorAll(".tab-contents iframe");
+    // Récupération des div qui contiennent les iframes
+    let iframeContainers = document.querySelectorAll(".tab-content");
+    // Pour chaque iframe on récupère la page d'origine
+    for (let i = 0; i < iframes.length; i++) {
+        let iframeContent =
+            iframes[i].contentWindow.document.getElementsByTagName("html")[0];
+        // Technique pour pouvoir obtenir la hauteur de la page , il faut d'abord inclure celle-ci dans le DOM courant
+        // D'abord clonage pour ne pas que la page d'origine ne s'affiche plus
+        iframeContent = iframeContent.cloneNode(true);
+        iframeContent.style.visibility = "hidden";
+        document.body.appendChild(iframeContent);
+        // Récupération de la hauteur
+        let height = iframeContent.clientHeight;
+        document.body.removeChild(iframeContent);
+        iframeContent.style.visibility = "visible";
+        // On ajuste la hauteur de la div qui contient la iframe
+        iframeContainers[i].style.height = height + 100 + "px";
+    }
+});
+
 function readMore(x) {
     let projetDescriptions = document.querySelectorAll(".tab-content");
     let shadow = document.querySelectorAll(".tab-content div");
