@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -145,15 +145,25 @@
                 <!-- système d'onglets -->
                 <div class="tab-btns">
                     <button class="tab-btn tab-btn-active" onclick="openTab(0)">
-                        CRM
+                        CRM <span>⨉</span>
                     </button>
                     <button class="tab-btn" onclick="openTab(1)">
-                        Ecommerce
+                        Ecommerce <span>⨉</span>
                     </button>
-                    <button class="tab-btn" onclick="openTab(2)">Tetris</button>
-                    <button class="tab-btn" onclick="openTab(3)">Quiz</button>
+                    <button class="tab-btn" onclick="openTab(2)">
+                        Tetris <span>⨉</span>
+                    </button>
+                    <button class="tab-btn" onclick="openTab(3)">
+                        Quiz <span>⨉</span>
+                    </button>
                     <button class="tab-btn" onclick="openTab(4)">
-                        Galerie d'art
+                        Galerie d'art <span>⨉</span>
+                    </button>
+                    <button class="tab-btn" onclick="openTab(5)">
+                        Carte SEDIF <span>⨉</span>
+                    </button>
+                    <button class="tab-btn" onclick="openTab(6)">
+                        Carte ADP <span>⨉</span>
                     </button>
                 </div>
                 <div class="tab-contents">
@@ -200,12 +210,31 @@
                         <div onclick="readMore(4)"></div>
                         <button onclick="readMore(4)">Lire la suite</button>
                     </div>
+                    <div class="tab-content article-reduced">
+                        <iframe
+                            src="./pages/projets/carte_sedif.html"
+                            scrolling="no"
+                            frameborder="0"></iframe>
+                        <div onclick="readMore(5)"></div>
+                        <button onclick="readMore(5)">Lire la suite</button>
+                    </div>
+                    <div class="tab-content article-reduced">
+                        <iframe
+                            src="./pages/projets/carte_adp.html"
+                            scrolling="no"
+                            frameborder="0"></iframe>
+                        <div onclick="readMore(6)"></div>
+                        <button onclick="readMore(6)">Lire la suite</button>
+                    </div>
                 </div>
                 <!-- MODAL -->
                 <div id="myModal" class="modal">
                     <span id="modal-close">&times;</span>
-                    <img class="modal-content" id="modal-image" />
+                    <!-- <img class="modal-content" id="modal-image" /> -->
+                    <div class="modal-content" id="modal-image"></div>
                     <div id="caption"></div>
+                    <a class="prev" id="modal-prev">&#10094;</a>
+                    <a class="next" id="modal-next">&#10095;</a>
                 </div>
                 <!-- FIN MODAL -->
             </section>
@@ -230,7 +259,7 @@
                         src="./pages/cv.html"
                         scrolling="no"
                         frameborder="0"
-                        height="850"
+                        height="930"
                         width="700"></iframe>
                 </div>
             </section>

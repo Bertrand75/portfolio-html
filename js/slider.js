@@ -26,11 +26,15 @@ var domSlideIndexes = document.getElementsByClassName("slide-index");
 for (let i = 0; i < domSlideIndexes.length; i++) {
     domSlideIndexes[i].innerHTML = i + 1 + " / " + domSlideIndexes.length;
 }
+
 var slides = document.getElementsByClassName("slide");
+
+// Création des dots
 let dotsContainer = document.getElementsByClassName("slide-dot");
 for (i = 1; i <= slides.length; i++) {
     dotsContainer[0].innerHTML +=
         '<span class="dot" onclick="currentSlide(' + i + ')"></span>';
 }
+
 var slideIndex = 1;
 showSlides(slideIndex);

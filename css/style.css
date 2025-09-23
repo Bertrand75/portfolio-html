@@ -1,7 +1,9 @@
 /************************************************************************/
 /****************************** GENERAL *********************************/
 /************************************************************************/
-
+/* * {
+    outline: solid 2px lime;
+} */
 html {
     scroll-behavior: smooth;
 }
@@ -356,9 +358,11 @@ input[type="submit"] {
     margin: 50px 0 0 50px;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap-reverse;
 }
 
 .tab-btn {
+    position: relative;
     color: rgb(167, 167, 167);
     background: #181818;
     font-family: inherit;
@@ -366,10 +370,14 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     padding: 20px;
-    width: 18rem;
+    width: 20rem;
     border: 1px solid #5d5d5d;
 }
-.tab-btn::after {
+.tab-btn span {
+    position: absolute;
+    right: 10%;
+}
+/* .tab-btn::after {
     content: "⨉";
     color: #181818;
     margin-left: 10%;
@@ -377,7 +385,7 @@ input[type="submit"] {
 }
 .tab-btn:hover::after {
     color: rgb(167, 167, 167);
-}
+} */
 .tab-btn-active {
     color: white;
     box-shadow: inset 0 5px #0078d4;

@@ -32,7 +32,14 @@ function openModal(x, y) {
     let image =
         iframe.contentWindow.document.getElementsByClassName("slide-img")[y];
     // Chargement de l'image
-    imageModal.src = image.src;
+    //imageModal.src = image.src;
+    image.src = image.src;
+    imageModal.innerHTML = image.outerHTML;
+
+    setTimeout(() => {
+        imageModal.firstChild.play();
+    }, "1000");
+
     // Récupération et chargement du texte
     let captionText = document.getElementById("caption");
     let text =
@@ -45,8 +52,17 @@ function openModal(x, y) {
     span.onclick = function () {
         modal.style.display = "none";
     };
-    modal.style.cursor = "pointer";
-    modal.onclick = function () {
-        modal.style.display = "none";
+    // modal.style.cursor = "pointer";
+    // modal.onclick = function () {
+    //     modal.style.display = "none";
+    // };
+    // Ajout de la fonctionnalité des boutons droite et gauche
+    let modalPrev = document.getElementById("modal-prev");
+    let modalNext = document.getElementById("modal-next");
+    modalPrev.onclick = function () {
+        openModal(x, y - 1);
+    };
+    modalNext.onclick = function () {
+        openModal(x, y + 1);
     };
 }
