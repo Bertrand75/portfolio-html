@@ -59,9 +59,9 @@
     cursor: pointer;
     transition: 0.4s;
 }
-.slide-img:hover {
+/* .slide-img:hover {
     opacity: 0.7;
-}
+} */
 .slide-dot {
     text-align: center;
 }
