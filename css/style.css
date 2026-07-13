@@ -472,7 +472,7 @@ input[type="submit"] {
 /**************************** CV *******************************/
 
 #cv {
-    padding-bottom: 50px;
+    padding-bottom: 10rem;
 }
 
 #cv button {
