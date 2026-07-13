@@ -160,6 +160,7 @@ header {
 #navbar a {
     color: #a7a7a7;
     font-size: 1.5rem;
+    padding: 1rem;
 }
 #navbar a:hover {
     color: #fdfdfd;
@@ -288,9 +289,13 @@ section {
 
 .sous_partie {
     margin: 20px auto;
-    max-width: 1000px;
+    max-width: 80%;
 }
-
+.sous_partie_titre {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
 .flex_horiz {
     display: flex;
     justify-content: space-between;
@@ -353,12 +358,17 @@ input[type="submit"] {
 
 /**************************** PROJETS *******************************/
 /************* ONGLETS ****************/
+#tab-container {
+    display: flex;
+}
 .tab-btns {
+    width: 20rem;
     text-align: center;
-    margin: 50px 0 0 50px;
+    /* margin: 50px 0 0 50px; */
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap-reverse;
+    align-content: flex-end;
 }
 
 .tab-btn {
@@ -372,6 +382,7 @@ input[type="submit"] {
     padding: 20px;
     width: 20rem;
     border: 1px solid #5d5d5d;
+    height: 5rem;
 }
 .tab-btn span {
     position: absolute;
@@ -395,13 +406,14 @@ input[type="submit"] {
     color: white;
 }
 .tab-contents {
+    width: 100%;
 }
 .tab-content {
     display: none;
     color: white;
     /*height: 60rem;*/
-    border: 1px solid #5d5d5d;
-    margin: 0 50px 100px 50px;
+    /* border: 1px solid #5d5d5d;
+    margin: 0 50px 100px 50px; */
     text-align: center;
     position: relative;
     transition: 0.5s ease-in-out;
@@ -560,6 +572,17 @@ footer p {
         width: 100%;
         min-width: 200px;
         margin-bottom: 20px;
+    }
+    #tab-container {
+        flex-direction: column;
+    }
+    .tab-btns {
+        width: unset;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sous_partie_titre {
+        flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 1024px) {

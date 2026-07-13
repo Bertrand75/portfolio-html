@@ -143,99 +143,103 @@
             <section id="projets">
                 <h1>Projets</h1>
                 <!-- système d'onglets -->
-                <div class="tab-btns">
-                    <button class="tab-btn tab-btn-active" onclick="openTab(0)">
-                        CRM <span>⨉</span>
-                    </button>
-                    <button class="tab-btn" onclick="openTab(1)">
-                        Ecommerce <span>⨉</span>
-                    </button>
-                    <button class="tab-btn" onclick="openTab(2)">
-                        Tetris <span>⨉</span>
-                    </button>
-                    <button class="tab-btn" onclick="openTab(3)">
-                        Quiz <span>⨉</span>
-                    </button>
-                    <button class="tab-btn" onclick="openTab(4)">
-                        Galerie d'art <span>⨉</span>
-                    </button>
-                    <button class="tab-btn" onclick="openTab(5)">
-                        Carte SEDIF <span>⨉</span>
-                    </button>
-                    <button class="tab-btn" onclick="openTab(6)">
-                        Carte ADP <span>⨉</span>
-                    </button>
-                    <button class="tab-btn" onclick="openTab(7)">
-                        Quiz Veolia <span>⨉</span>
-                    </button>
-                </div>
-                <div class="tab-contents">
-                    <div
-                        class="tab-content article-reduced"
-                        style="display: block">
-                        <iframe
-                            src="./pages/projets/crm_relances.html"
-                            scrolling="no"
-                            frameborder="0"></iframe>
-                        <div onclick="readMore(0)"></div>
-                        <button onclick="readMore(0)">Lire la suite</button>
+                <div id="tab-container">
+                    <div class="tab-btns">
+                        <button
+                            class="tab-btn tab-btn-active"
+                            onclick="openTab(0)">
+                            CRM <span>⨉</span>
+                        </button>
+                        <button class="tab-btn" onclick="openTab(1)">
+                            Ecommerce <span>⨉</span>
+                        </button>
+                        <button class="tab-btn" onclick="openTab(2)">
+                            Tetris <span>⨉</span>
+                        </button>
+                        <button class="tab-btn" onclick="openTab(3)">
+                            Quiz <span>⨉</span>
+                        </button>
+                        <button class="tab-btn" onclick="openTab(4)">
+                            Galerie d'art <span>⨉</span>
+                        </button>
+                        <button class="tab-btn" onclick="openTab(5)">
+                            Carte SEDIF <span>⨉</span>
+                        </button>
+                        <button class="tab-btn" onclick="openTab(6)">
+                            Carte ADP <span>⨉</span>
+                        </button>
+                        <button class="tab-btn" onclick="openTab(7)">
+                            Quiz Veolia <span>⨉</span>
+                        </button>
                     </div>
+                    <div class="tab-contents">
+                        <div
+                            class="tab-content article-reduced"
+                            style="display: block">
+                            <iframe
+                                src="./pages/projets/crm_relances.html"
+                                scrolling="no"
+                                frameborder="0"></iframe>
+                            <div onclick="readMore(0)"></div>
+                            <button onclick="readMore(0)">Lire la suite</button>
+                        </div>
 
-                    <div class="tab-content article-reduced">
-                        <iframe
-                            src="./pages/projets/ecommerce_audio.html"
-                            scrolling="no"
-                            frameborder="0"></iframe>
-                        <div onclick="readMore(1)"></div>
-                        <button onclick="readMore(1)">Lire la suite</button>
-                    </div>
-                    <div class="tab-content article-reduced">
-                        <iframe
-                            src="./pages/projets/tetris.html"
-                            scrolling="no"
-                            frameborder="0"></iframe>
-                        <div onclick="readMore(2)"></div>
-                        <button onclick="readMore(2)">Lire la suite</button>
-                    </div>
-                    <div class="tab-content article-reduced">
-                        <iframe
-                            src="./pages/projets/permis_d_econduire.html"
-                            scrolling="no"
-                            frameborder="0"></iframe>
-                        <div onclick="readMore(3)"></div>
-                        <button onclick="readMore(3)">Lire la suite</button>
-                    </div>
-                    <div class="tab-content article-reduced">
-                        <iframe
-                            src="./pages/projets/galerie.html"
-                            scrolling="no"
-                            frameborder="0"></iframe>
-                        <div onclick="readMore(4)"></div>
-                        <button onclick="readMore(4)">Lire la suite</button>
-                    </div>
-                    <div class="tab-content article-reduced">
-                        <iframe
-                            src="./pages/projets/carte_sedif.html"
-                            scrolling="no"
-                            frameborder="0"></iframe>
-                        <div onclick="readMore(5)"></div>
-                        <button onclick="readMore(5)">Lire la suite</button>
-                    </div>
-                    <div class="tab-content article-reduced">
-                        <iframe
-                            src="./pages/projets/carte_adp.html"
-                            scrolling="no"
-                            frameborder="0"></iframe>
-                        <div onclick="readMore(6)"></div>
-                        <button onclick="readMore(6)">Lire la suite</button>
-                    </div>
-                    <div class="tab-content article-reduced">
-                        <iframe
-                            src="./pages/projets/quiz_veolia.html"
-                            scrolling="no"
-                            frameborder="0"></iframe>
-                        <div onclick="readMore(7)"></div>
-                        <button onclick="readMore(7)">Lire la suite</button>
+                        <div class="tab-content article-reduced">
+                            <iframe
+                                src="./pages/projets/ecommerce_audio.html"
+                                scrolling="no"
+                                frameborder="0"></iframe>
+                            <div onclick="readMore(1)"></div>
+                            <button onclick="readMore(1)">Lire la suite</button>
+                        </div>
+                        <div class="tab-content article-reduced">
+                            <iframe
+                                src="./pages/projets/tetris.html"
+                                scrolling="no"
+                                frameborder="0"></iframe>
+                            <div onclick="readMore(2)"></div>
+                            <button onclick="readMore(2)">Lire la suite</button>
+                        </div>
+                        <div class="tab-content article-reduced">
+                            <iframe
+                                src="./pages/projets/permis_d_econduire.html"
+                                scrolling="no"
+                                frameborder="0"></iframe>
+                            <div onclick="readMore(3)"></div>
+                            <button onclick="readMore(3)">Lire la suite</button>
+                        </div>
+                        <div class="tab-content article-reduced">
+                            <iframe
+                                src="./pages/projets/galerie.html"
+                                scrolling="no"
+                                frameborder="0"></iframe>
+                            <div onclick="readMore(4)"></div>
+                            <button onclick="readMore(4)">Lire la suite</button>
+                        </div>
+                        <div class="tab-content article-reduced">
+                            <iframe
+                                src="./pages/projets/carte_sedif.html"
+                                scrolling="no"
+                                frameborder="0"></iframe>
+                            <div onclick="readMore(5)"></div>
+                            <button onclick="readMore(5)">Lire la suite</button>
+                        </div>
+                        <div class="tab-content article-reduced">
+                            <iframe
+                                src="./pages/projets/carte_adp.html"
+                                scrolling="no"
+                                frameborder="0"></iframe>
+                            <div onclick="readMore(6)"></div>
+                            <button onclick="readMore(6)">Lire la suite</button>
+                        </div>
+                        <div class="tab-content article-reduced">
+                            <iframe
+                                src="./pages/projets/quiz_veolia.html"
+                                scrolling="no"
+                                frameborder="0"></iframe>
+                            <div onclick="readMore(7)"></div>
+                            <button onclick="readMore(7)">Lire la suite</button>
+                        </div>
                     </div>
                 </div>
                 <!-- MODAL -->
