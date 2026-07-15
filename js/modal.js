@@ -8,7 +8,7 @@ window.onload = function () {
     for (let i = 0; i < iframes.length; i++) {
         let images =
             iframes[i].contentWindow.document.getElementsByClassName(
-                "slide-img"
+                "slide-img",
             );
 
         // Ajout des fonctions de déclenchement aux images
@@ -28,7 +28,8 @@ function openModal(x, y) {
     let imageModal = document.getElementById("modal-image");
 
     // Récupération de l'image à charger
-    let iframe = document.getElementsByTagName("iframe")[x];
+    let iframes = document.getElementsByTagName("iframe");
+    let iframe = iframes[x];
     let image =
         iframe.contentWindow.document.getElementsByClassName("slide-img")[y];
     // Chargement de l'image
@@ -36,9 +37,11 @@ function openModal(x, y) {
     image.src = image.src;
     imageModal.innerHTML = image.outerHTML;
 
-    setTimeout(() => {
-        imageModal.firstChild.play();
-    }, "1000");
+    if (imageModal.firstChild instanceof HTMLVideoElement) {
+        setTimeout(() => {
+            imageModal.firstChild.play();
+        }, "1000");
+    }
 
     // Récupération et chargement du texte
     let captionText = document.getElementById("caption");
@@ -60,9 +63,30 @@ function openModal(x, y) {
     let modalPrev = document.getElementById("modal-prev");
     let modalNext = document.getElementById("modal-next");
     modalPrev.onclick = function () {
-        openModal(x, y - 1);
+        if (
+            iframes[x].contentWindow.document.getElementsByClassName(
+                "slide-img",
+            )[y - 1] !== undefined
+        ) {
+            openModal(x, y - 1);
+        } else {
+            openModal(
+                x,
+                iframes[x].contentWindow.document.getElementsByClassName(
+                    "slide-img",
+                ).length - 1,
+            );
+        }
     };
     modalNext.onclick = function () {
-        openModal(x, y + 1);
+        if (
+            iframes[x].contentWindow.document.getElementsByClassName(
+                "slide-img",
+            )[y + 1] !== undefined
+        ) {
+            openModal(x, y + 1);
+        } else {
+            openModal(x, 0);
+        }
     };
 }
