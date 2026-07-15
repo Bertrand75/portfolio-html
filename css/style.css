@@ -434,6 +434,8 @@ input[type="submit"] {
 .img-techno {
     height: 30px;
     margin: 0 3px;
+    border: 1px solid #5d5d5d;
+    padding: 5px;
 }
 
 /********************* LIRE LA SUITE ***************************/
