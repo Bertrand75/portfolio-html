@@ -365,6 +365,7 @@ input[type="submit"] {
     width: 20rem;
     text-align: center;
     /* margin: 50px 0 0 50px; */
+    margin-top: 3rem;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap-reverse;
@@ -580,6 +581,13 @@ footer p {
         width: unset;
         flex-direction: row;
         justify-content: center;
+    }
+    .tab-btn {
+        height: unset;
+        width: 19rem;
+    }
+    .sous_partie {
+        max-width: unset;
     }
     .sous_partie_titre {
         flex-wrap: wrap;
